@@ -1,0 +1,15 @@
+#:kivy 1.0.9
+
+<Ball>:
+    size: 50, 50
+    canvas:
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<State>:
+	ball_ref: ball_id
+
+	Ball:
+		id: ball_id
+        center: self.parent.center
